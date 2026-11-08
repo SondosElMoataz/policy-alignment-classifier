@@ -1,0 +1,74 @@
+{
+  "batch_id": "20261108T111953_eda8ec18",
+  "hardware": {
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "nvidia_smi": "NVIDIA A100-SXM4-40GB, GPU-0810eda6-60d2-3237-eea2-7fee733998a3, 580.82.07, 40960 MiB",
+    "ollama_version": "ollama version is 0.40.15"
+  },
+  "policy_file": "policy_v1_1.md",
+  "splits": [
+    "dev",
+    "test"
+  ],
+  "versions": [
+    "v1",
+    "v2",
+    "v3"
+  ],
+  "model": "qwen3:4b",
+  "context_size": 6,
+  "warmup_per_run": true,
+  "runs": [
+    {
+      "experiment": "final_v1_dev_NVIDIA_A100_SXM4_40GB",
+      "version": "v1",
+      "split": "dev",
+      "prompt_source_commit": "a2722bf99035f6597b4c07cedacfd9e827432044",
+      "status": "completed",
+      "results_dir": "/content/drive/MyDrive/policy_classifier_results/final_batch_NVIDIA_A100_SXM4_40GB_20261108T111953_eda8ec18/final_v1_dev_NVIDIA_A100_SXM4_40GB_20261108-112126-021912_f33c84cd"
+    },
+    {
+      "experiment": "final_v2_dev_NVIDIA_A100_SXM4_40GB",
+      "version": "v2",
+      "split": "dev",
+      "prompt_source_commit": "64f27df624d15cb410c055bb190b3a4d26680f80",
+      "status": "completed",
+      "results_dir": "/content/drive/MyDrive/policy_classifier_results/final_batch_NVIDIA_A100_SXM4_40GB_20261108T111953_eda8ec18/final_v2_dev_NVIDIA_A100_SXM4_40GB_20261108-112410-057142_f9f8fca6"
+    },
+    {
+      "experiment": "final_v3_dev_NVIDIA_A100_SXM4_40GB",
+      "version": "v3",
+      "split": "dev",
+      "prompt_source_commit": "0901c79788bac98d090fa528ac0c5b35f947997c",
+      "status": "completed",
+      "results_dir": "/content/drive/MyDrive/policy_classifier_results/final_batch_NVIDIA_A100_SXM4_40GB_20261108T111953_eda8ec18/final_v3_dev_NVIDIA_A100_SXM4_40GB_20261108-112643-531509_31812d44"
+    },
+    {
+      "experiment": "final_v1_test_NVIDIA_A100_SXM4_40GB",
+      "version": "v1",
+      "split": "test",
+      "prompt_source_commit": "a2722bf99035f6597b4c07cedacfd9e827432044",
+      "status": "completed",
+      "results_dir": "/content/drive/MyDrive/policy_classifier_results/final_batch_NVIDIA_A100_SXM4_40GB_20261108T111953_eda8ec18/final_v1_test_NVIDIA_A100_SXM4_40GB_20261108-112923-172878_81e4f7a5"
+    },
+    {
+      "experiment": "final_v2_test_NVIDIA_A100_SXM4_40GB",
+      "version": "v2",
+      "split": "test",
+      "prompt_source_commit": "64f27df624d15cb410c055bb190b3a4d26680f80",
+      "status": "completed",
+      "results_dir": "/content/drive/MyDrive/policy_classifier_results/final_batch_NVIDIA_A100_SXM4_40GB_20261108T111953_eda8ec18/final_v2_test_NVIDIA_A100_SXM4_40GB_20261108-113042-906240_92cb6d32"
+    },
+    {
+      "experiment": "final_v3_test_NVIDIA_A100_SXM4_40GB",
+      "version": "v3",
+      "split": "test",
+      "prompt_source_commit": "0901c79788bac98d090fa528ac0c5b35f947997c",
+      "status": "completed",
+      "results_dir": "/content/drive/MyDrive/policy_classifier_results/final_batch_NVIDIA_A100_SXM4_40GB_20261108T111953_eda8ec18/final_v3_test_NVIDIA_A100_SXM4_40GB_20261108-113157-989971_276f3088"
+    }
+  ],
+  "status": "completed",
+  "comparison_scope": "Historical system prompts only; current shared event rendering, schema, parser and log-only rule scoping. No historical deterministic verdict rewriting."
+}

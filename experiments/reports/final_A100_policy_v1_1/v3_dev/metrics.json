@@ -1,0 +1,165 @@
+{
+  "evaluated_cases": 105,
+  "accuracy": 0.7714285714285715,
+  "violation_recall": 0.8974358974358975,
+  "unsafe_allows": 3,
+  "unsafe_allow_rate": 0.07692307692307693,
+  "false_blocks": 17,
+  "false_block_rate": 0.2698412698412698,
+  "escalation_recall": 0.0,
+  "invalid_responses": 0,
+  "selected_cases": 105,
+  "experiment": "final_v3_dev_NVIDIA_A100_SXM4_40GB",
+  "split": "dev",
+  "policy_file": "policy_v1_1.md",
+  "context_size": 6,
+  "system_prompt": "versioned_template",
+  "model": "qwen3:4b",
+  "per_class": {
+    "allow": {
+      "precision": 0.9387755102040817,
+      "recall": 0.7301587301587301,
+      "f1": 0.8214285714285714,
+      "support": 63
+    },
+    "violation": {
+      "precision": 0.6481481481481481,
+      "recall": 0.8974358974358975,
+      "f1": 0.7526881720430108,
+      "support": 39
+    },
+    "escalate": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    }
+  },
+  "confusion_matrix": {
+    "allow": {
+      "allow": 46,
+      "violation": 16,
+      "escalate": 1,
+      "invalid": 0
+    },
+    "violation": {
+      "allow": 3,
+      "violation": 35,
+      "escalate": 1,
+      "invalid": 0
+    },
+    "escalate": {
+      "allow": 0,
+      "violation": 3,
+      "escalate": 0,
+      "invalid": 0
+    }
+  },
+  "error_breakdown": {
+    "event_kind": {
+      "model_output": {
+        "cases": 29,
+        "errors": 6,
+        "invalid": 0
+      },
+      "user_input": {
+        "cases": 21,
+        "errors": 3,
+        "invalid": 0
+      },
+      "tool_response": {
+        "cases": 31,
+        "errors": 4,
+        "invalid": 0
+      },
+      "tool_call": {
+        "cases": 24,
+        "errors": 11,
+        "invalid": 0
+      }
+    },
+    "gold_policy_rule": {
+      "none": {
+        "cases": 63,
+        "errors": 17,
+        "invalid": 0
+      },
+      "R2": {
+        "cases": 7,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R1,R4": {
+        "cases": 5,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R4": {
+        "cases": 14,
+        "errors": 4,
+        "invalid": 0
+      },
+      "R2,R4": {
+        "cases": 5,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R5": {
+        "cases": 3,
+        "errors": 3,
+        "invalid": 0
+      },
+      "R4,R5": {
+        "cases": 1,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R1": {
+        "cases": 5,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R3": {
+        "cases": 2,
+        "errors": 0,
+        "invalid": 0
+      }
+    }
+  },
+  "latency_ms": {
+    "measured_cases": 105,
+    "missing_cases": 0,
+    "mean": 1505.1789714285712,
+    "min": 736.552,
+    "max": 5554.48,
+    "total": 158043.792,
+    "p50": 1393.717,
+    "p90": 2165.488,
+    "p95": 2398.729,
+    "p99": 3931.191
+  },
+  "latency_population": "all completed attempts, including failures; wall time including retries; nearest-rank percentiles",
+  "token_usage": {
+    "prompt_tokens": {
+      "measured_cases": 105,
+      "missing_cases": 0,
+      "total": 355254,
+      "mean": 3383.3714285714286
+    },
+    "completion_tokens": {
+      "measured_cases": 105,
+      "missing_cases": 0,
+      "total": 20859,
+      "mean": 198.65714285714284
+    }
+  },
+  "cost_usd": {
+    "status": "unavailable",
+    "input_per_million_tokens": null,
+    "output_per_million_tokens": null,
+    "priced_cases": 0,
+    "observed_usage_estimate": null,
+    "all_cases_estimate": null,
+    "basis": "User-supplied rates times returned usage. Excludes unreported retry usage, subscriptions, hardware, electricity and compute rental; not a bill."
+  }
+}

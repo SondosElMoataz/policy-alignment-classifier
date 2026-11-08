@@ -1,0 +1,43 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.uv_cache/
+
+# Local research repositories and downloaded data
+research/
+
+# Generated evaluation outputs
+results/
+
+# Frontend
+node_modules/
+frontend/dist/
+web/dist/
+
+# Editor
+.vscode/
+.idea/
+
+# pdf documents 
+*.pdf
+
+
+# Local service logs and downloaded model artifacts
+.run/
+*.gguf
+*.safetensors
+*.onnx
+.coverage
+htmlcov/
+
+.vite/

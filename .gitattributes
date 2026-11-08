@@ -1,0 +1,2 @@
+# Keep data byte-identical across OSes so run_config dataset_sha256 matches
+*.jsonl text eol=lf

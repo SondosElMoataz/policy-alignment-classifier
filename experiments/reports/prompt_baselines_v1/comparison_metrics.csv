@@ -1,0 +1,5 @@
+﻿experiment,status,n_labeled,n_valid,accuracy_all_labels,unsafe_allow_count,unsafe_allow_rate,violation_recall,false_block_count,false_block_rate,escalation_recall,invalid_response_count,latency_ms
+B0,not run,,,,,,,,,,,
+B1,verified predictions,50,50,0.66,9,0.375,0.625,5,0.2174,0.0,0,"{""p50"":2852.65,""p95"":4802.4}"
+E1,derived saved log,50,50,0.66,11,0.4583,0.5417,3,0.1304,0.0,0,"{""p50"":3100.0,""p95"":5600.0}"
+E2,user-reported aggregates,50,49,0.64,9,0.375,0.5833,5,0.21739130434782608,0,1,{}

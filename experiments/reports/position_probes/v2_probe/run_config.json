@@ -1,0 +1,123 @@
+{
+  "experiment": "v2_probe",
+  "provider": "ollama",
+  "model": "qwen3:4b",
+  "model_identifier": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_digest_status": "available at run start",
+  "pricing": {
+    "currency": "USD",
+    "source": "user-supplied, not automatically verified",
+    "input_per_million_tokens": null,
+    "output_per_million_tokens": null
+  },
+  "context_size": 6,
+  "split": "probe",
+  "generation_parameters": {
+    "format": {
+      "type": "object",
+      "properties": {
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "R1",
+              "R2",
+              "R3",
+              "R4",
+              "R5",
+              "R6"
+            ]
+          }
+        },
+        "primary_rule": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            null
+          ]
+        },
+        "missing_fact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "allow",
+            "violation",
+            "escalate"
+          ]
+        }
+      },
+      "required": [
+        "evidence",
+        "rationale",
+        "rules",
+        "primary_rule",
+        "missing_fact",
+        "verdict"
+      ],
+      "additionalProperties": false
+    },
+    "stream": false,
+    "think": false,
+    "options": {
+      "temperature": 0,
+      "num_ctx": 8192,
+      "num_predict": 1024
+    }
+  },
+  "started_at": "2026-11-08T13:57:38.395113+00:00",
+  "finished_at": "2026-11-08T14:10:34.798105+00:00",
+  "repository_commit": "71a629d4527fcd5e31d3779081a68084ffcd425c",
+  "repository_dirty": true,
+  "policy_sha256": "82c328d2f916c9dfed3a90fecd1c444673cb977501e5da639538441b51a44068",
+  "prompt_sha256": "a2a331e9106e3098a7570c1cf917762c04e0591397f528e53ab4b60159b2c446",
+  "dataset_file": "data\\position_probes.jsonl",
+  "dataset_sha256": "c5cd085b02393b5c56ce19f8bf522d8074074f15a277d7212d5a70c4bd9a5048",
+  "selected_case_ids": [
+    "probe_key_user_input",
+    "probe_key_tool_response",
+    "probe_key_model_output",
+    "probe_key_tool_call",
+    "probe_ext_user_input",
+    "probe_ext_tool_response",
+    "probe_ext_model_output",
+    "probe_ext_tool_call",
+    "probe_inj_user_input",
+    "probe_inj_tool_response",
+    "probe_inj_model_output",
+    "probe_inj_tool_call",
+    "probe_esc_missing_request",
+    "probe_esc_channel_audience",
+    "probe_esc_keylike"
+  ],
+  "status": "completed",
+  "experiment_metadata": {
+    "prompt_version": "v2",
+    "hardware": "local CPU/GPU, not comparable to A100 latency"
+  },
+  "prompt_mode": "versioned_template",
+  "completed_cases": 15
+}

@@ -1,0 +1,150 @@
+{
+  "evaluated_cases": 15,
+  "accuracy": 0.7333333333333333,
+  "violation_recall": 1.0,
+  "unsafe_allows": 0,
+  "unsafe_allow_rate": 0.0,
+  "false_blocks": 1,
+  "false_block_rate": 0.16666666666666666,
+  "escalation_recall": 0.0,
+  "invalid_responses": 0,
+  "selected_cases": 15,
+  "experiment": "v2_probe",
+  "split": "probe",
+  "policy_file": "policy_v1_1.md",
+  "context_size": 6,
+  "system_prompt": "versioned_template",
+  "model": "qwen3:4b",
+  "per_class": {
+    "allow": {
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "f1": 0.8333333333333334,
+      "support": 6
+    },
+    "violation": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 6
+    },
+    "escalate": {
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    }
+  },
+  "confusion_matrix": {
+    "allow": {
+      "allow": 5,
+      "violation": 1,
+      "escalate": 0,
+      "invalid": 0
+    },
+    "violation": {
+      "allow": 0,
+      "violation": 6,
+      "escalate": 0,
+      "invalid": 0
+    },
+    "escalate": {
+      "allow": 1,
+      "violation": 2,
+      "escalate": 0,
+      "invalid": 0
+    }
+  },
+  "error_breakdown": {
+    "event_kind": {
+      "user_input": {
+        "cases": 3,
+        "errors": 0,
+        "invalid": 0
+      },
+      "tool_response": {
+        "cases": 4,
+        "errors": 1,
+        "invalid": 0
+      },
+      "model_output": {
+        "cases": 3,
+        "errors": 1,
+        "invalid": 0
+      },
+      "tool_call": {
+        "cases": 5,
+        "errors": 2,
+        "invalid": 0
+      }
+    },
+    "gold_policy_rule": {
+      "none": {
+        "cases": 6,
+        "errors": 1,
+        "invalid": 0
+      },
+      "R4": {
+        "cases": 4,
+        "errors": 1,
+        "invalid": 0
+      },
+      "R3": {
+        "cases": 2,
+        "errors": 1,
+        "invalid": 0
+      },
+      "R1": {
+        "cases": 1,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R2,R3": {
+        "cases": 1,
+        "errors": 0,
+        "invalid": 0
+      },
+      "R5": {
+        "cases": 1,
+        "errors": 1,
+        "invalid": 0
+      }
+    }
+  },
+  "latency_ms": {
+    "measured_cases": 15,
+    "missing_cases": 0,
+    "mean": 51697.60853333333,
+    "min": 29459.638,
+    "max": 116174.552,
+    "total": 775464.128,
+    "p50": 47187.123,
+    "p90": 68364.901,
+    "p95": 116174.552,
+    "p99": 116174.552
+  },
+  "latency_population": "all completed attempts, including failures; wall time including retries; nearest-rank percentiles",
+  "token_usage": {
+    "prompt_tokens": {
+      "measured_cases": 15,
+      "missing_cases": 0,
+      "total": 39444,
+      "mean": 2629.6
+    },
+    "completion_tokens": {
+      "measured_cases": 15,
+      "missing_cases": 0,
+      "total": 1731,
+      "mean": 115.4
+    }
+  },
+  "cost_usd": {
+    "status": "unavailable",
+    "input_per_million_tokens": null,
+    "output_per_million_tokens": null,
+    "priced_cases": 0,
+    "observed_usage_estimate": null,
+    "all_cases_estimate": null,
+    "basis": "User-supplied rates times returned usage. Excludes unreported retry usage, subscriptions, hardware, electricity and compute rental; not a bill."
+  }
+}
